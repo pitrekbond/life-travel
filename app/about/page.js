@@ -14,7 +14,7 @@ export default async function Page() {
   const session = await auth();
 
   return (
-    <div className=" grid grid-cols-5 gap-x-24 gap-y-32 text-lg items-center py-12 px-16">
+    <div className=" grid  grid-cols-5 gap-x-24 gap-y-32 text-lg items-center py-12 px-20">
       <div className="col-span-3">
         <h1 className="text-4xl mb-10 text-accent-400 font-medium">
           Discover the world and share it

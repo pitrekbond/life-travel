@@ -1,6 +1,7 @@
 import "@/app/_styles/globals.css";
 import { Inter } from "next/font/google";
-import Header from "../_components/Header";
+import Header from "./_components/Header";
+import ToasterComponent from "./_components/Toaster";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -21,12 +22,13 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         className={`${inter.className}
-        bg-primary-500 text-primary-50 min-h-screen flex flex-col relative`}
+        bg-primary-800 text-primary-50 min-h-screen flex flex-col relative`}
       >
         <Header />
-        <div className="flex-1 px-6 grid">
-          <main className="max-w-8xl mx-auto w-full">{children}</main>
+        <div className="flex-1 grid">
+          <main className="w-full">{children}</main>
         </div>
+        <ToasterComponent />
       </body>
     </html>
   );
