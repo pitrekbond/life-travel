@@ -37,6 +37,9 @@ export default function CountryList({ cities }) {
         onPageChange={setCurrentPageCountries}
         itemsPerPage={COUNTRIES_PER_PAGE}
       />
+      <p className="text-gray-200 text-sm absolute bottom-[-6rem] w-full flex justify-center">
+        © Copyright 2025 by Piotr Tomaszek
+      </p>
     </>
   );
 }

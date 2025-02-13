@@ -15,7 +15,7 @@ export default async function Page() {
   const cities = await getCities(session.user.guestId);
 
   return (
-    <div>
+    <div className="relative">
       <CountryList cities={cities} />
     </div>
   );
