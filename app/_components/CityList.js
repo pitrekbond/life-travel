@@ -80,9 +80,6 @@ export default function CityList({ cities }) {
         onPageChange={setCurrentPage}
         itemsPerPage={CITIES_PER_PAGE}
       />
-      <p className="text-gray-200 text-sm absolute bottom-[-5rem] w-full flex justify-center">
-        © Copyright 2025 by Piotr Tomaszek
-      </p>
     </>
   );
 }

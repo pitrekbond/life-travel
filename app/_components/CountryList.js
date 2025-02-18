@@ -22,7 +22,11 @@ export default function CountryList({ cities }) {
   );
 
   if (cities.length === 0)
-    return <span>Add your first city by clicking on the map</span>;
+    return (
+      <p className="text-center text-2xl w-4/5 font-semibold bg-primary-400 rounded-md p-2 border-4 border-accent-300 ml-12">
+        Add your first city by clicking on the map
+      </p>
+    );
 
   return (
     <>
@@ -37,9 +41,6 @@ export default function CountryList({ cities }) {
         onPageChange={setCurrentPageCountries}
         itemsPerPage={COUNTRIES_PER_PAGE}
       />
-      <p className="text-gray-200 text-sm absolute bottom-[-6rem] w-full flex justify-center">
-        © Copyright 2025 by Piotr Tomaszek
-      </p>
     </>
   );
 }

@@ -1,5 +1,3 @@
-
-
 export default function DeleteButton({ id, onDelete }) {
   function handleDelete(e) {
     e.preventDefault();
